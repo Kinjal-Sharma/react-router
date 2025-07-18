@@ -6,6 +6,8 @@ import { Contact } from "./pages/Contact";
 import AppLayout from "./components/Layout/AppLayout";
 import "./App.css"
 import { GetMoviesData } from "./api/GetAPIData";
+import { MovieDetails } from "./components/UI/MovieDetails";
+import { GetMoviesDetails } from "./api/GetMovieDetails";
 
 const App = () => {
 
@@ -27,6 +29,11 @@ const App = () => {
           path: "/movie",
           element: <Movie />,
           loader: GetMoviesData,
+        },
+        {
+          path: "/movie/:movieID",
+          element: <MovieDetails />,
+          loader: GetMoviesDetails,
         },
         {
           path: "/contact",

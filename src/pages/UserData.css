@@ -1,0 +1,76 @@
+.user-listings {
+    display: flex;
+    flex-direction: row;
+}
+
+.users {
+    width:50%;
+}
+
+.user-card {
+   align-items: center;
+    border: 2px solid #555;
+    border-radius: 12px;
+    margin: 15px;
+    padding: 20px;
+    max-width: 500px;
+    background-color: #f9f9f9;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+   text-align: center;
+}
+
+.user-card:hover {
+    transform: scale(1.02);
+}
+
+.user-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #888;
+    align-items: center;
+}
+
+.user-details {
+  
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+.user-details p {
+    margin: 5px 0;
+}
+
+.details-header {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15%;
+    padding-top: 10%;;
+    width:50%;
+   height:50%;
+
+}
+h1{
+    display: block;
+    text-align: center;
+    font-size: 120px;
+    padding-top: 60px;
+    
+}
+
+button {
+    padding:20px;
+    background-color: rgb(72, 173, 216);
+    color:white;
+   margin-top: 20px;
+}

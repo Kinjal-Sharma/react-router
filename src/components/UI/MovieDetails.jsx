@@ -21,6 +21,7 @@ export const MovieDetails = () => {
     imdbRating,
   } = movieData;
 
+
   // 192min
   const totalMinutes = Runtime.replace("min", "");
   const hours = Math.floor(totalMinutes / 60); // Calculate the number of hours
@@ -30,6 +31,7 @@ export const MovieDetails = () => {
 
   const formattedTime = `${hours}hr ${minutes}min`;
   console.log(formattedTime);
+
 
   return (
     <li className="hero-container hero-movie-container">

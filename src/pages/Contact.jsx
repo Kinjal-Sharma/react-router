@@ -3,6 +3,7 @@ import { Form } from "react-router";
 export const contactData = async ({ request }) => {
     try {
         const res = await request.formData();
+        // converting the form data into objects
         const data = Object.fromEntries(res);
         console.log(data);
 
